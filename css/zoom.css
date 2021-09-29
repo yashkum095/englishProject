@@ -8,13 +8,13 @@
   position: absolute;
   border: 1px solid #d4d4d4;
   /*set the size of the lens:*/
-  width: 50px;
+  width: 60px;
   height: 50px;
 }
   
 .img-zoom-result {
   border: 1px solid #0c0c0c;
   /*set the size of the result div:*/
-  width: 400px;
+  width: 450px;
   height: 400px;
 }
