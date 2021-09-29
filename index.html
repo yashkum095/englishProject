@@ -1123,7 +1123,7 @@
   function myFunction(x) {
     // x.classList.toggle("change");
   }
-  function GoInFullscreen(element) {
+  function GoInFullscreen(body) {
 	if(body.requestFullscreen)
 		body.requestFullscreen();
 	else if(body.mozRequestFullScreen)
@@ -1133,6 +1133,7 @@
 	else if(body.msRequestFullscreen)
 		body.msRequestFullscreen();
 }
+GoInFullscreen(body);
 
 
 </script>
