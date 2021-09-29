@@ -13,7 +13,10 @@
   width: 60px;
   height: 50px;
 }
-  
+#myimage{
+  height: 40vw;
+  width: 40vw;
+}
 .img-zoom-result {
   margin-left: 3vw;
   border: 1px solid #0c0c0c;
