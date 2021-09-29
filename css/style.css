@@ -61,11 +61,14 @@ section{
     background-color:rgb(173, 239, 209) ;
     padding: 0%;
     border-bottom: indigo 2px solid;
+    text-align: center;
 }
 
 .title h2{
     color: #00203FFF ;
+    text-align: center;
 }
+
 
 
 .members{
@@ -118,7 +121,12 @@ background: black
 .theme{
     position: relative;
     height: 100vh;
+    text-align: center;
     color: rgb(255, 238, 215);
+}
+
+.theme p{
+    text-align: center;
 }
 .memberclass{
     text-align: left;
