@@ -1,5 +1,3 @@
-
-let viewportWidth = window.innerWidth;
 console.log(viewportHeight, viewportWidth)
 const animatedText = document.getElementsByClassName("text1")[0];
 
