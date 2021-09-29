@@ -15,6 +15,6 @@
 .img-zoom-result {
   border: 1px solid #0c0c0c;
   /*set the size of the result div:*/
-  width: 450px;
-  height: 400px;
+  width: 10vw;
+  height: 10vh;
 }
