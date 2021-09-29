@@ -8,7 +8,7 @@
   
 .img-zoom-lens {
   position: absolute;
-  border: 1px solid #d4d4d4;
+  border: 2px solid red;
   /*set the size of the lens:*/
   width: 8vw;
   height: 5vw;
