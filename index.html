@@ -988,7 +988,8 @@
   </section>
   <section class="image">
     <div class="img-zoom-container">
-      <img id="myimage" src="https://www.dropbox.com/s/sgrhmxgetelfvoz/gandr-collage.jpg?raw=1" width="300" height="240" alt="Girl">
+      <img id="myimage" src="https://www.dropbox.com/s/sgrhmxgetelfvoz/gandr-collage.jpg?raw=1" width="300" height="240"
+        alt="Girl">
       <div id="myresult" class="img-zoom-result"></div>
     </div>
   </section>
@@ -1122,6 +1123,16 @@
   function myFunction(x) {
     // x.classList.toggle("change");
   }
+  body.requestFullscreen()
+    .then(function () {
+      // element has entered fullscreen mode successfully
+    })
+    .catch(function (error) {
+      // element could not enter fullscreen mode
+      // error message
+      console.log(error.message);
+    });
+
 </script>
 
 <script>
