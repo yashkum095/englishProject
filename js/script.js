@@ -15,6 +15,9 @@ aosAnimation.forEach(aosObject => {
 observer.observe(aosObject);
 });
 
+
+
+
 function imageZoom(imgID, resultID) {
     var img, lens, result, cx, cy;
     img = document.getElementById(imgID);
