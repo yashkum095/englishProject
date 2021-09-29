@@ -1123,18 +1123,15 @@
   function myFunction(x) {
     // x.classList.toggle("change");
   }
-  function GoInFullscreen(body) {
-	if(body.requestFullscreen)
-		body.requestFullscreen();
-	else if(body.mozRequestFullScreen)
-		body.mozRequestFullScreen();
-	else if(body.webkitRequestFullscreen)
-		body.webkitRequestFullscreen();
-	else if(body.msRequestFullscreen)
-		body.msRequestFullscreen();
-}
-GoInFullscreen(body);
-
+  body.requestFullscreen()
+    .then(function () {
+      // element has entered fullscreen mode successfully
+    })
+    .catch(function (error) {
+      // element could not enter fullscreen mode
+      // error message
+      console.log(error.message);
+    });
 
 </script>
 
