@@ -9,7 +9,7 @@
 .img-zoom-lens {
   position: absolute;
   border: 2px solid red;
-  outline: white 2px solid;
+  outline: white 1px solid;
   /* box-shadow: 5px white; */
   /*set the size of the lens:*/
   width: 8vw;
