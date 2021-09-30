@@ -40,5 +40,5 @@
 
 .image{
   background-image: linear-gradient(90deg , red, blue, yellow, purple, orange, violet, white, red);
-
+  background-size: 400%;
 }
