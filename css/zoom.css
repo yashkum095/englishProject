@@ -2,9 +2,8 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    /* justify-content: center;
+    align-items: center; */
   }
   
 .img-zoom-lens {
@@ -26,20 +25,4 @@
   /*set the size of the result div:*/
   width: 48vw;
   height: 30vw;
-}
-
-.image-text{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.imagecon{
-  display: inline-block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
