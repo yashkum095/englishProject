@@ -4,6 +4,7 @@
     flex-direction: row;
     /* justify-content: center;
     align-items: center; */
+    width: 100%;
   }
   
 .img-zoom-lens {
@@ -30,6 +31,12 @@
 .image-text{
   display: flex;
   flex-direction: row;
+  width: 100%;
   align-items: center;
   justify-content: center;
+}
+
+.imagecon{
+  display: flex;
+  flex-direction: column;
 }
