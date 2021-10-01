@@ -29,3 +29,9 @@ canvas {
     z-index: 5;
     font-variant: small-caps;
 }
+
+.software li{
+    color: white;
+    font-size: 2vw;
+    z-index: 5;
+}
