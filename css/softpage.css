@@ -61,7 +61,7 @@ canvas {
     margin: 1.2vw;
 }
 
-.software a:hover > .software img{
+.software a:hover > img{
     filter: brightness(150%);
 }
 
