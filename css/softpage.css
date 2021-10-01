@@ -58,6 +58,7 @@ canvas {
 .software img{
     z-index: 5;
     width: 4vw;
+    margin: 0.6vw;
 }
 
 #git{
