@@ -59,6 +59,7 @@ canvas {
     z-index: 5;
     width: 4vw;
     margin: 1.2vw;
+    transition: all 0.3s ease-in-out;
 }
 
 .software a:hover > img{
