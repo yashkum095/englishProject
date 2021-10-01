@@ -12,6 +12,12 @@
 }
 canvas {
     position:absolute;
+    top: 1700vh;
+    left:0;
+}
+
+#bgCanvas{
+    position:absolute;
     top:0;
     left:0;
 }
