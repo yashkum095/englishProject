@@ -35,3 +35,7 @@ canvas {
     font-size: 2vw;
     z-index: 5;
 }
+
+.software ul{
+    z-index: 5;
+}
