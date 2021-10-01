@@ -47,3 +47,7 @@ canvas {
     /* align-items: center;
     justify-content: center; */
 }
+
+.software img{
+    width: 10px;
+}
