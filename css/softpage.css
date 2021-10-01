@@ -67,7 +67,7 @@ canvas {
 }
 
 #gita:hover>#git{
-    filter: brightness(50%);
+    -webkit-filter: grayscale(1) invert(0.5); filter: grayscale(1) invert(0.5); 
 } 
 
 #git{
