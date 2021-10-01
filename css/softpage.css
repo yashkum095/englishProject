@@ -11,10 +11,10 @@ canvas {
     position:absolute;
     top:0;
     left:0;
-    z-index: -1;
 }
 
 .software h3{
     color: white;
     font-size: 2em;
+    z-index: 5;
 }
