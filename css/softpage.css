@@ -62,11 +62,11 @@ canvas {
     transition: all 0.3s ease-in-out;
 }
 
-.software a:hover > img{
+.software a:hover > img, .software a:focus > img{
     filter: brightness(165%);
 }
 
-#gita:hover>#git{
+#gita:hover>#git, #gita:focus > #git{
     -webkit-filter: grayscale(0.8) invert(1); filter: grayscale(0.8) invert(1); 
 } 
 
