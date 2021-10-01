@@ -92,6 +92,9 @@
 .container1 img{
   width: 70px;
 }
+.containr1:hover > img{
+  filter: brightness(50%);
+}
 .bar1, .bar2, .bar3 {
   width: 50px;
   height: 5px;
