@@ -27,6 +27,7 @@ canvas {
     color: white;
     font-size: 3vw;
     z-index: 5;
+    margin: 2vw;
     font-variant: small-caps;
 }
 
@@ -34,7 +35,7 @@ canvas {
     color: white;
     font-size: 2vw;
     z-index: 5;
-    margin: 2vw;
+    margin: 1vw;
     margin-left: 20vw;
     margin-right: 20vw;
 }
