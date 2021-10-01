@@ -124,3 +124,9 @@
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
+
+.container1 h3{
+  font-size: 3vw;
+  font-variant: small-caps;
+  color: brown;
+}
