@@ -61,6 +61,10 @@ canvas {
     margin: 1.2vw;
 }
 
+.software a:hover > img{
+    filter: brightness(150%);
+}
+
 #git{
     /* filter: brightness(120%); */
     -webkit-filter: grayscale(1) invert(1); filter: grayscale(1) invert(1); 
