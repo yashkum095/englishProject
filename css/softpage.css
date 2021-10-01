@@ -34,6 +34,7 @@ canvas {
     color: white;
     font-size: 2vw;
     z-index: 5;
+    margin: 2vw;
     margin-left: 20vw;
     margin-right: 20vw;
 }
