@@ -27,4 +27,5 @@ canvas {
     color: white;
     font-size: 2em;
     z-index: 5;
+    font-variant: small-caps;
 }
