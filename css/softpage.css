@@ -51,3 +51,7 @@ canvas {
 .software img{
     width: 2vw;
 }
+
+#git{
+    filter: brightness(120%);
+}
