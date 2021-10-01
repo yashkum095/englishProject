@@ -62,6 +62,6 @@ canvas {
 }
 
 #git{
-    filter: brightness(120%);
+    /* filter: brightness(120%); */
     -webkit-filter: grayscale(1) invert(1); filter: grayscale(1) invert(1); 
 }
