@@ -34,12 +34,14 @@ canvas {
     color: white;
     font-size: 2vw;
     z-index: 5;
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
 
 .software ul{
     z-index: 5;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
 }
