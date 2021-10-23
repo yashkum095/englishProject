@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Integration Project - Mera Gaon Mera Dharohar</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <style>
+    .loader-wrapper {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      background-color: #242f3f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loader {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      border: 4px solid #Fff;
+      animation: loader 2s infinite ease;
+    }
+
+    .loader-inner {
+      vertical-align: top;
+      display: inline-block;
+      width: 100%;
+      background-color: #fff;
+      animation: loader-inner 2s infinite ease-in;
+    }
+
+    @keyframes loader {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      25% {
+        transform: rotate(180deg);
+      }
+
+      50% {
+        transform: rotate(180deg);
+      }
+
+      75% {
+        transform: rotate(360deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes loader-inner {
+      0% {
+        height: 0%;
+      }
+
+      25% {
+        height: 0%;
+      }
+
+      50% {
+        height: 100%;
+      }
+
+      75% {
+        height: 100%;
+      }
+
+      100% {
+        height: 0%;
+      }
+    }
+  </style>
+  <!-- JQUERY  -->
+  <script src="js/jquery.js"></script>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="css/zoom.css">
+  <link rel="stylesheet" href="css/wave1.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation1.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/softpage.css">
+
+  <!-- FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/nav.css">
+  <!-- AOS ANIMATION  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+  <link rel="stylesheet" href="css/wave2.css">
+</head>
+
+<body>
+  <!-- The overlay -->
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <ul>
+        <h3>Index</h3>
+        <li><a href="#sec1" onclick="closeNav()">Welcome Page</a></li>
+        <li><a href="#sec2" onclick="closeNav()">Title</a></li>
+        <li><a href="#sec3" onclick="closeNav()">Group Members</a></li>
+        <li><a href="#sec4" onclick="closeNav()">Theme Of Project</a></li>
+        <li><a href="#sec5" onclick="closeNav()">Village Selected</a></li>
+        <li><a href="#sec6" onclick="closeNav()">Cultural/Historical/Social Importance</a></li>
+        <li><a href="#sec7" onclick="closeNav()">Interview</a></li>
+        <li><a href="#sec8" onclick="closeNav()">Conclusion</a></li>
+        <li><a href="#sec9" onclick="closeNav()">Video</a></li>
+        <li><a href="#image" onclick="closeNav()">Image Gallery</a></li>
+        <li><a href="#sec10" onclick="closeNav()">Credits</a></li>
+        <li><a href="#softw" onclick="closeNav()">Softwares and Websites Used</a></li>
+        <li><a href="#sec11" onclick="closeNav()">Downloads</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <!-- Use any element to open/show the overlay navigation menu -->
+  <div class="container1" onclick="myFunction(this); openNav();" id="ham">
+    <!-- <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div> -->
+    <img src="images/menu.png" alt="">
+  </div>
+
+  <div id="landscape">
+    <img loading="eager" src="images/landscape.png" alt="">
+    <p>
+      Please turn your phone in landscape mode and refresh this page.
+    </p>
+  </div>
+
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+  <section class="welcome" id="sec1">
+    <div class="container">
+      <span class="text1">Welcome To</span>
+      <span class="text2">English Art Integration Project</span>
+    </div>
+  </section>
+
+  <section class="title" id="sec2">
+    <h2 data-aos="fade-up" data-aos-delay="500" data-aos-offset="-100" class="aos">My Village My Heritage</h2>
+  </section>
+
+  <section class="members pink " id="sec3">
+    <div class="custom-shape-divider-top-1632477780">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+          opacity=".25" class="shape-fill"></path>
+        <path
+          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+          opacity=".5" class="shape-fill"></path>
+        <path
+          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+
+
+    <svg id="blobmotion" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+      <g transform="translate(436.3339368488779 280.3044762648937)">
+        <path id="blob1"
+          d="M86.3 -128.9C113.9 -116.6 139.7 -96.1 159.4 -68.3C179 -40.5 192.4 -5.5 189 28.1C185.6 61.6 165.4 93.7 141.6 124.7C117.9 155.8 90.6 185.8 61.2 182.8C31.7 179.7 0.1 143.6 -24.6 119.9C-49.4 96.2 -67.2 84.9 -88.2 70.8C-109.1 56.7 -133.3 39.6 -147.9 14.2C-162.5 -11.2 -167.7 -45.1 -155 -69.9C-142.3 -94.7 -111.7 -110.4 -82.9 -122.1C-54.1 -133.8 -27 -141.4 1.2 -143.2C29.4 -145 58.7 -141.1 86.3 -128.9"
+          fill="#53add6"></path>
+      </g>
+      <g transform="translate(428.61830295286825 283.00664962124677)" style="visibility: hidden;">
+        <path id="blob2"
+          d="M94.9 -147.2C114.2 -135.4 114.9 -94.1 133.1 -59.3C151.3 -24.5 187 3.8 187.9 30C188.8 56.3 154.8 80.5 127.2 107.3C99.5 134.1 78.1 163.5 48.9 176.6C19.8 189.7 -17 186.5 -50.7 175.4C-84.5 164.3 -115.2 145.3 -124.8 117.5C-134.4 89.6 -122.9 52.8 -127.1 18.7C-131.2 -15.4 -151.1 -46.7 -143.4 -66.2C-135.6 -85.7 -100.3 -93.3 -71.8 -101C-43.3 -108.6 -21.6 -116.3 8.1 -128.9C37.8 -141.6 75.7 -159.1 94.9 -147.2"
+          fill="#53add6"></path>
+      </g>
+    </svg>
+
+    <div class="membercontainer">
+      <h3 data-aos="fade-right" data-aos-delay="500" data-aos-offset="-100">Introduction of Group members</h3>
+      <div>
+        <p class="memberclass" data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">1. Amey Sawale</p>
+        <p class="memberclass" data-aos="fade-right" data-aos-delay="500" data-aos-offset="-100">2. Ayush Satpute</p>
+        <p class="memberclass" data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">3. Chaitanya Shelar</p>
+        <p class="memberclass" data-aos="fade-right" data-aos-delay="500" data-aos-offset="-100">4. Hitesh Bhusara</p>
+        <p class="memberclass" data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">5. Yash Kumar</p>
+      </div>
+    </div>
+
+
+    <div class="custom-shape-divider-top-1632477780 flip" style="bottom: 0;">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+          opacity=".25" class="shape-fill"></path>
+        <path
+          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+          opacity=".5" class="shape-fill"></path>
+        <path
+          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+
+  <section class="theme" id="sec4">
+
+    <svg id="gradient" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+      <defs>
+        <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+          <feGaussianBlur stdDeviation="161" result="effect1_foregroundBlur"></feGaussianBlur>
+        </filter>
+      </defs>
+      <!-- <rect width="900" height="600" fill="#6600FF"></rect> -->
+      <g filter="url(#blur1)">
+        <circle cx="704" cy="223" fill="#00CC99" r="357"></circle>
+        <circle cx="253" cy="306" fill="#6600FF" r="357"></circle>
+        <circle cx="147" cy="45" fill="#00CC99" r="357"></circle>
+        <circle cx="692" cy="22" fill="#00CC99" r="357"></circle>
+        <circle cx="645" cy="402" fill="#6600FF" r="357"></circle>
+        <circle cx="812" cy="537" fill="#00CC99" r="357"></circle>
+      </g>
+    </svg>
+    <h3 class="themehead" data-aos="zoom-in" data-aos-delay="500" data-aos-offset="-100">
+      Theme of the Project
+    </h3>
+    <p class="themepara" data-aos="zoom-out" data-aos-delay="500" data-aos-offset="-100">
+      To Share interesting facts and information about our village, its culture, tradition, popular monuments, good
+      environmental practices, interviews with the people, etc.,
+    </p>
+  </section>
+
+  <section class="selected-vil" id="sec5">
+    <div class="bg-vil"></div>
+    <div class="selected-container">
+      <span>
+        <h3 data-aos="fade-right" data-aos-delay="500" data-aos-offset="-100">
+          Village Selected:
+        </h3>
+        <p data-aos="fade-right" data-aos-delay="500" data-aos-offset="-100">
+          Nighoj, Ahmednagar
+        </p>
+      </span>
+      <img loading="eager" data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100"
+        src="https://www.dropbox.com/s/ga0fpt1sq92tst3/nighoj.jpg?raw=1" alt="">
+    </div>
+  </section>
+
+  <section class="information-1" id="sec6">
+    <img loading="eager" src="images/image-1.png" alt="" data-aos="fade-right" data-aos-delay="500"
+      data-aos-offset="-100">
+    <div class="infocontainer">
+      <h3 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+        Historical/Cultural/Social Importance Of the Village
+      </h3>
+      <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+        Location
+      </h4>
+      <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">The village Nighoj is located in the Parner
+        taluka, which lies in
+        the
+        eastern part of Ahmednagar district. The village is famous for its
+        naturally created potholes on the riverbed of the Kukadi River.</p>
+      <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+        Potholes
+      </h4>
+      <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+        These potholes make this village special. Scientists from all over
+        the world are fascinated by naturally created potholes. Several
+        nature enthusiasts. Travel photographers, etc… come every year to
+        experience this wonderful work of nature.
+        The beautiful looking potholes are carved by the flowing circular
+        currents in the river.
+        The small pebbles-sediment, trapped in the water, rub against the
+        riverbed to create a depression. The formation of the potholes is a
+        continuous process that has come over a long time. The place is
+        also known by its name “ The Little Grand Canyon ".
+      </p>
+    </div>
+  </section>
+
+  <section class="information-2">
+    <img loading="eager" src="images/janmashtmi.png" alt="" data-aos="fade-right" data-aos-delay="500"
+      data-aos-offset="-100">
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+      The Janmashtami Festival
+    </h4>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+      Nighoj village comes alive during Janmashtami when lakhs of
+      devotees throng to witness a miracle.In the core of the village, is an
+      architectural beauty - barav (step well) known for its magnificent
+      Hemadpanthi structure. Locals believe that on Janamashthami, the
+      day that Lord Krishna was born, an earthern pot filled with water
+      emerges from the step well, at midnight. This is displayed in the
+      temple of Malganga for 3 days. On the 3rd day, the pot is taken near
+      the well from where it disappears. Locals claim that it is the miracle
+      of Malganga Devi. The faith of villagers in this goddess is
+      phenomenal.
+    </p>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+      Dressing Style
+    </h4>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+      In the peaceful village of Nighoj men are clad in white dhotis and Kurtas, while women are attired in colorful
+      Nauvari sarees and the typical Maharashtrian Nathni.
+    </p>
+    <div class="info-container-2" data-aos="zoom-out-up" data-aos-delay="500" data-aos-offset="-100">
+      <div>
+        <img loading="eager" src="images/dhoti.png" alt="">
+        <h5>Dhoti</h5>
+      </div>
+      <div>
+        <img loading="eager" src="images/saree.png" alt="">
+        <h5>Nauravi Saree</h5>
+      </div>
+    </div>
+  </section>
+
+  <section class="information-3">
+    <img loading="eager" src="images/gulabjamun.png" alt="" data-aos="fade-right" data-aos-delay="500"
+      data-aos-offset="-100">
+    <h4 id="firsto" data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+      Cuisine
+    </h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Since it is located in the region of Khandesh
+      and northern
+      Maharashtra. The cuisine includes spicy and mouth watering food
+      like Misal, Pithla bhakri, Spicy amti, Kadi, Dal rice,etc….
+      During the festival season sweet dishes such as Puran-poli, Modak,
+      Gulab-jamun, etc….</p>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Population</h4>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+      The aggregate population of the village is 10,385. Which roughly
+      consists of male population of about 52% and female population of
+      about 48%. The total literacy rate is 68%.
+    </p>
+    <table data-aos="zoom-out-up" data-aos-delay="500" data-aos-offset="-100">
+      <tbody>
+        <tr>
+          <th>Census Parameter</th>
+          <th>Census Data </th>
+        </tr>
+        <tr>
+          <td>Total Population </td>
+          <td> 10385 </td>
+        </tr>
+        <tr>
+          <td>Total No of Houses </td>
+          <td> 2109 </td>
+        </tr>
+        <tr>
+          <td>Female Population % </td>
+          <td> 47.9 % ( 4975) </td>
+        </tr>
+        <tr>
+          <td>Total Literacy rate % </td>
+          <td> 67.9 % ( 7048)</td>
+        </tr>
+        <tr>
+          <td>Female Literacy rate </td>
+          <td> 29.2 % ( 3035) </td>
+        </tr>
+        <tr>
+          <td>Scheduled Tribes Population % </td>
+          <td> 4.0 % ( 415) </td>
+        </tr>
+        <tr>
+          <td>Scheduled Caste Population % </td>
+          <td> 8.9 % ( 923)</td>
+        </tr>
+        <tr>
+          <td>Working Population % </td>
+          <td> 50.5 % </td>
+        </tr>
+        <tr>
+          <td> Child(0 -6) Population by 2011 </td>
+          <td> 1178 </td>
+        </tr>
+        <tr>
+          <td>Girl Child(0 -6) Population % by 2011 </td>
+          <td> 44.5 % ( 524) </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="information-4">
+    <img loading="eager" class="farm" src="images/farm.png" alt="" data-aos="fade-right" data-aos-delay="500"
+      data-aos-offset="-100">
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+      Lifestyle
+    </h4>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">People are mainly dependent on farming. Farmers
+      cultivate sugarcane,
+      cotton, soybean, millet, etc in their farms. Many people are now
+      operating small businesses in the Nighoj market along with their
+      profession. Schooling facilities are also good in Nighoj.</p>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+      Temples in Nighoj
+    </h4>
+    <p>
+      <img loading="eager" class="temple" src="images/malganga.jpg" alt="" data-aos="zoom-out-up" data-aos-delay="500"
+        data-aos-offset="-100">
+    <ol data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+      <li>1.Malaganga Temple </li>
+      <li>2.Kapileshwar Temple</li>
+      <li>3.Waghajai mata Temple</li>
+      <li>4.Shambhu Temple</li>
+      <li>5.Vardvinayak Temple, Tanpurevasti</li>
+      <li>6.Savta mali Temple</li>
+    </ol>
+    </p>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">The main attraction among this temple is the
+      Malganga temple due
+      to its mysterious event which occurs on the day of Janmashtami.</p>
+  </section>
+
+  <section class="information-5">
+    <div class="infobox">
+      <img loading="eager" src="images/aeroplane.png" alt="" data-aos="zoom-out-down" data-aos-delay="500"
+        data-aos-offset="-100">
+      <div data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+        <h4 id="firsto2">How To Reach</h4>
+        <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">By Road: Shirur is the nearest town to
+          Nighoj. Road connectivity
+          is
+          there from Shirur to Nighoj.</p>
+        <p data-aos="fade-right" data-aos-delay="500" data-aos-offset="-100">By Train: Sainagar Shirdi RailWay Station
+          is the very nearby
+          railway
+          station to Nighoj. However Manmad Jn RailWay Station is a major
+          railway station 57 KM near to Nighoj.</p>
+        <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+          By Airway: The nearest airports are
+          Gandhinagar Airport- 80 KM
+          Chikkalthana Airport- 109 KM
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="information-6" id="sec7">
+    <img loading="eager" src="images/man.png" alt="" data-aos="fade-right" data-aos-delay="500" data-aos-offset="-100">
+    <h3 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">An Interview with a villager</h3>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Me: Hi uncle, how are you?</h4>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Villager: I am fine, child.</p>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Me: Uncle, can I ask you some questions about
+      the village If you are free?</h4>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Villager: Yea, I am free right now.</p>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Me: Uncle, are there any temples in here? If
+      yes, then can you name some?</h4>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Villager: Yeah, as every village has its temple
+      there are 6 temples in total in here. Their names are Malaganga Temple, Kapileshwar Temple, Waghajai Mata Temple,
+      Shambhu Temple, Vardvinayak Temple, Savta mali Temple, etc...</p>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Me: Is there any worldwide famous or historical
+      monument?</h4>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Villager: Yeah, the Malganga temple is known due
+      to its mysterious event which occurs on the day of Janmashtami.</p>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Me: Anything special in festivals?</h4>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Villager: In the village, there is a Hemadpanthi
+      structure called 'barav '. On Janmashthami earthen pot filled with water emerges from step well at midnight. This
+      is exhibited in the temple of Malganga for 3 days. On the third day, the people of the village take that pot near
+      the well from where it disappears. This is a mystery till now, lots of people say this is the miracle of Malganga
+      Devi.</p>
+  </section>
+
+  <section class="information-7">
+    <img loading="eager" src="images/firewood.png" alt="" data-aos="fade-right" data-aos-delay="500"
+      data-aos-offset="-100">
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Me: Wow amazing. Is there anything that makes
+      this village more special?</h4>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Villager: There are potholes that make this
+      village special. Tourists come every year to experience this wonderful work of nature. These natural-looking
+      potholes are created by the flowing of rivers and rainwater. Some say that this is a repetitive process that goes
+      on over time, and it will still carry on.</p>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Me: Do the children in the village go to
+      school?</h4>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Villager: Yes, all the children in the village
+      go to school from 9 am - 5 pm, Monday through Saturday. Children here study till class 8 because village schools
+      like some Z.P. Schools provide education only till 8th class. For further studies students go to cities.</p>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Me: What forms of fuel do you use here?</h4>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Villager: We use dung from the animals and
+      firewood for cooking, some of us even use LPG gas, but still it hasn't reached to every family of this village.
+      Every year, we go up the mountain and gather firewood from the forest. We might have to go more than one time a
+      year. </p>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Me: What happens when there are conflicts in
+      the village?</h4>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Villager: If there is any problem in the
+      village, there is a panchayat administration to handle it. The panchayat is consulted in need of help in certain
+      problems. If both the people are not happy with the solution or service of the panchayat, then they contact the
+      nearby police station.</p>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Me: How do people dress in here? </h4>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Villager: Here most men wear white dhotis and
+      Kurtas, while women are covered in colorful Nauvari sarees and the typical Maharashtrian Nathni. Though you can
+      also find some people dressed in other ways these days.</p>
+  </section>
+
+  <section class="information-7-5">
+    <img loading="eager" src="images/peas.png" alt="" data-aos="fade-right" data-aos-delay="500" data-aos-offset="-100">
+    <h4 id="firsto3" data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Me: Where does the food that you
+      cook the meals with come from?</h4>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Villager: Mostly from the fields. Sometimes we
+      get some vegetables from the near town market. Right now, we grow carrots, sweet potatoes, tomatoes, green peas,
+      onion, potatoes, mustard seed, cabbage, cauliflower, ginger, different leafy vegetables, sugar cane. Soon we will
+      begin to plant and harvest our summer foods: watermelon, cucumber, mangos, pumpkin, and rice when the rainy season
+      heralds. Normally, we sell our surplus of these things in the town market itself.</p>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Me: I think it all works very well together.
+      The community and family are such a strong and functional foundation to the village. And I think this type of
+      significance is a lot important. I also see that while there are fewer beliefs and greediness for material things
+      in here, there seems to be more peace and happiness.</h4>
+  </section>
+
+  <section class="information-8" id="sec8">
+    <img loading="eager" src="images/ghats.png" alt="" data-aos="fade-right" data-aos-delay="500"
+      data-aos-offset="-100">
+    <h3 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Conclusion:</h3>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Beside the western ghats of Maharashtra, Nighoj
+      village paves its
+      place in the delightful district of Ahmednagar. The people of the
+      village are always happy and humble to each other. They show great
+      excitement for festivals, especially for the festival of Janmashtami.</p>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+      The best season to visit the village is the end of rainy and summer.
+      As there is a lot of greenery also we can see the waterfall in the
+      rainy season. And in summer one can see the beauty of engraved
+      potholes.
+    </p>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+      The thing which makes this village unique is the Kukadi river which
+      accompanies it with naturally formed attractive potholes. One can
+      enjoy a lot of things and experience the miracle of mother nature in
+      Nighoj village.
+    </p>
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">
+      The beautiful village of Nighoj… :)
+    </h4>
+    </p>
+  </section>
+
+
+  <section class="video" id="sec9">
+    <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+      <g stroke-width="3" stroke-linejoin="bevel">
+        <path d="M462.7 257.5L464.7 305.5L493.3 296.5Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M402.2 307.5L450.7 333.6L464.7 305.5Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M464.7 305.5L496.3 334.6L493.3 296.5Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M450.7 333.6L496.3 334.6L464.7 305.5Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M542.8 253.5L510.3 232.5L493.3 296.5Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M493.3 296.5L510.3 232.5L462.7 257.5Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M447.7 200.4L404.2 255.5L462.7 257.5Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M462.7 257.5L402.2 307.5L464.7 305.5Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M404.2 255.5L402.2 307.5L462.7 257.5Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M567.8 306.5L542.8 253.5L493.3 296.5Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M510.3 232.5L447.7 200.4L462.7 257.5Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M560.8 188.4L511.3 195.4L510.3 232.5Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M510.3 232.5L511.3 195.4L447.7 200.4Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M554.8 338.6L567.8 306.5L493.3 296.5Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M504.3 402.7L554.8 338.6L496.3 334.6Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M496.3 334.6L554.8 338.6L493.3 296.5Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M355.7 346.6L399.2 350.6L402.2 307.5Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M402.2 307.5L399.2 350.6L450.7 333.6Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M450.7 333.6L442.7 390.7L496.3 334.6Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M345.7 247.5L363.7 286.5L404.2 255.5Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M404.2 255.5L363.7 286.5L402.2 307.5Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M399.2 350.6L442.7 390.7L450.7 333.6Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M398.2 156.3L390.2 192.4L447.7 200.4Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M447.7 200.4L390.2 192.4L404.2 255.5Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M442.7 390.7L504.3 402.7L496.3 334.6Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M542.8 253.5L560.8 188.4L510.3 232.5Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M511.3 195.4L441.7 150.3L447.7 200.4Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M611.3 242.5L560.8 188.4L542.8 253.5Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M390.2 192.4L345.7 247.5L404.2 255.5Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M363.7 286.5L355.7 346.6L402.2 307.5Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M399.2 350.6L392.2 405.7L442.7 390.7Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M306.2 282.5L355.7 346.6L363.7 286.5Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M600.3 336.6L605.3 302.5L567.8 306.5Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M567.8 306.5L611.3 242.5L542.8 253.5Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M600.3 336.6L567.8 306.5L554.8 338.6Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M517.3 135.3L441.7 150.3L511.3 195.4Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M544.8 405.7L600.3 336.6L554.8 338.6Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M605.3 302.5L611.3 242.5L567.8 306.5Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M504.3 402.7L544.8 405.7L554.8 338.6Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M441.7 150.3L398.2 156.3L447.7 200.4Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M390.2 192.4L344.7 187.4L345.7 247.5Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M345.7 387.7L392.2 405.7L399.2 350.6Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M448.7 436.8L506.3 427.8L504.3 402.7Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M504.3 402.7L506.3 427.8L544.8 405.7Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M448.7 436.8L504.3 402.7L442.7 390.7Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M562.8 148.3L517.3 135.3L560.8 188.4Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M560.8 188.4L517.3 135.3L511.3 195.4Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M360.7 103.2L356.7 147.3L398.2 156.3Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M392.2 405.7L448.7 436.8L442.7 390.7Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M356.7 147.3L344.7 187.4L390.2 192.4Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M610.3 144.3L562.8 148.3L560.8 188.4Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M291.2 342.6L345.7 387.7L355.7 346.6Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M355.7 346.6L345.7 387.7L399.2 350.6Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M392.2 405.7L400.2 443.8L448.7 436.8Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M306.2 282.5L363.7 286.5L345.7 247.5Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M289.2 233.5L306.2 282.5L345.7 247.5Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M652.8 249.5L618.3 197.4L611.3 242.5Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M611.3 242.5L618.3 197.4L560.8 188.4Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M360.7 103.2L398.2 156.3L390.2 85.2Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M398.2 156.3L356.7 147.3L390.2 192.4Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M344.7 187.4L289.2 233.5L345.7 247.5Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M347.7 435.8L400.2 443.8L392.2 405.7Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M506.3 427.8L559.8 436.8L544.8 405.7Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M544.8 405.7L618.3 404.7L600.3 336.6Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M543.8 499.9L559.8 436.8L506.3 427.8Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M496.3 488.9L506.3 427.8L448.7 436.8Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M649.8 337.6L650.8 306.5L605.3 302.5Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M605.3 302.5L652.8 249.5L611.3 242.5Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M649.8 337.6L605.3 302.5L600.3 336.6Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M650.8 306.5L652.8 249.5L605.3 302.5Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M618.3 404.7L649.8 337.6L600.3 336.6Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M698.4 248.5L662.8 201.4L652.8 249.5Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M492.3 95.2L466.7 95.2L517.3 135.3Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M517.3 135.3L466.7 95.2L441.7 150.3Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M546.8 104.2L492.3 95.2L517.3 135.3Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M290.2 195.4L289.2 233.5L344.7 187.4Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M559.8 436.8L618.3 404.7L544.8 405.7Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M306.2 282.5L291.2 342.6L355.7 346.6Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M345.7 387.7L347.7 435.8L392.2 405.7Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M258.6 295.5L291.2 342.6L306.2 282.5Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M594.3 104.2L546.8 104.2L562.8 148.3Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M562.8 148.3L546.8 104.2L517.3 135.3Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M656.8 139.3L610.3 144.3L618.3 197.4Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M618.3 197.4L610.3 144.3L560.8 188.4Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M302.2 399.7L347.7 435.8L345.7 387.7Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M310.2 157.3L290.2 195.4L344.7 187.4Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M356.7 147.3L310.2 157.3L344.7 187.4Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M314.2 97.2L310.2 157.3L356.7 147.3Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M652.8 249.5L662.8 201.4L618.3 197.4Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M698.4 248.5L652.8 249.5L650.8 306.5Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M291.2 342.6L302.2 399.7L345.7 387.7Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M441.7 497.9L448.7 436.8L400.2 443.8Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M441.7 497.9L496.3 488.9L448.7 436.8Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M559.8 436.8L609.3 446.8L618.3 404.7Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M390.2 85.2L398.2 156.3L441.7 150.3Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M466.7 95.2L390.2 85.2L441.7 150.3Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M445.7 54.1L390.2 85.2L466.7 95.2Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M253.6 243.5L306.2 282.5L289.2 233.5Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M253.6 243.5L258.6 295.5L306.2 282.5Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M291.2 342.6L265.6 403.7L302.2 399.7Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M610.3 144.3L594.3 104.2L562.8 148.3Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M495.3 48.1L466.7 95.2L492.3 95.2Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M495.3 48.1L445.7 54.1L466.7 95.2Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M648.8 103.2L594.3 104.2L610.3 144.3Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M597.3 492.9L609.3 446.8L559.8 436.8Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M618.3 404.7L669.8 399.7L649.8 337.6Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M357.7 493.9L396.2 484.9L347.7 435.8Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M347.7 435.8L396.2 484.9L400.2 443.8Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M396.2 484.9L441.7 497.9L400.2 443.8Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M253.6 204.4L289.2 233.5L290.2 195.4Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M253.6 204.4L253.6 243.5L289.2 233.5Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M214.1 337.6L255.6 329.6L258.6 295.5Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M258.6 295.5L255.6 329.6L291.2 342.6Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M265.6 403.7L309.2 435.8L302.2 399.7Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M302.2 399.7L309.2 435.8L347.7 435.8Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M714.4 304.5L650.8 306.5L709.4 335.6Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M714.4 304.5L698.4 248.5L650.8 306.5Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M662.8 201.4L656.8 139.3L618.3 197.4Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M495.3 48.1L492.3 95.2L547.8 47.1Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M510.3 540L543.8 499.9L496.3 488.9Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M496.3 488.9L543.8 499.9L506.3 427.8Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M642.8 454.8L618.3 404.7L609.3 446.8Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M642.8 454.8L669.8 399.7L618.3 404.7Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M251.6 137.3L290.2 195.4L310.2 157.3Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M251.6 137.3L253.6 204.4L290.2 195.4Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M699.4 155.3L656.8 139.3L662.8 201.4Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M547.8 47.1L546.8 104.2L594.3 104.2Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M547.8 47.1L492.3 95.2L546.8 104.2Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M255.6 329.6L265.6 403.7L291.2 342.6Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M305.2 491.9L357.7 493.9L347.7 435.8Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M395.2 540L447.7 540L441.7 497.9Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M305.2 491.9L347.7 435.8L309.2 435.8Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M709.4 335.6L650.8 306.5L649.8 337.6Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M696.4 390.7L709.4 335.6L649.8 337.6Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M347.7 60.1L314.2 97.2L360.7 103.2Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M360.7 103.2L314.2 97.2L356.7 147.3Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M347.7 60.1L360.7 103.2L390.2 85.2Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M597.3 492.9L642.8 454.8L609.3 446.8Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M669.8 399.7L696.4 390.7L649.8 337.6Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M543.8 499.9L597.3 492.9L559.8 436.8Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M606.3 56.1L547.8 47.1L594.3 104.2Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M709.4 430.8L696.4 390.7L669.8 399.7Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M700.4 84.2L648.8 103.2L656.8 139.3Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M656.8 139.3L648.8 103.2L610.3 144.3Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M461.7 0L411.2 38.1L445.7 54.1Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M445.7 54.1L411.2 38.1L390.2 85.2Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M461.7 0L445.7 54.1L495.3 48.1Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M746.9 256.5L708.4 190.4L698.4 248.5Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M698.4 248.5L708.4 190.4L662.8 201.4Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M411.2 38.1L347.7 60.1L390.2 85.2Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M708.4 190.4L699.4 155.3L662.8 201.4Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M395.2 540L441.7 497.9L396.2 484.9Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M441.7 497.9L447.7 540L496.3 488.9Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M543.8 499.9L553.8 540L597.3 492.9Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M447.7 540L510.3 540L496.3 488.9Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M559.8 0L606.3 56.1L618.3 0Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M648.8 103.2L606.3 56.1L594.3 104.2Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M314.2 97.2L251.6 137.3L310.2 157.3Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M207.1 248.5L258.6 295.5L253.6 243.5Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M257.6 96.2L251.6 137.3L314.2 97.2Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M189.1 293.5L214.1 337.6L258.6 295.5Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M255.6 329.6L214.1 337.6L265.6 403.7Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M207.1 248.5L253.6 243.5L253.6 204.4Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M210.1 191.4L207.1 248.5L253.6 204.4Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M242.6 449.8L305.2 491.9L309.2 435.8Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M357.7 493.9L395.2 540L396.2 484.9Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M242.6 449.8L309.2 435.8L265.6 403.7Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M344.7 540L395.2 540L357.7 493.9Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M510.3 540L553.8 540L543.8 499.9Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M718.4 478.9L709.4 430.8L642.8 454.8Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M760.9 297.5L746.9 256.5L714.4 304.5Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M714.4 304.5L746.9 256.5L698.4 248.5Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M746.9 155.3L700.4 84.2L699.4 155.3Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M745.9 354.6L714.4 304.5L709.4 335.6Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M251.6 137.3L210.1 191.4L253.6 204.4Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M642.8 454.8L709.4 430.8L669.8 399.7Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M696.4 390.7L745.9 354.6L709.4 335.6Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M659.8 496.9L642.8 454.8L597.3 492.9Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M506.3 0L461.7 0L495.3 48.1Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M306.2 0L295.2 61.1L347.7 60.1Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M506.3 0L495.3 48.1L547.8 47.1Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M359.7 0L347.7 60.1L411.2 38.1Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M347.7 60.1L295.2 61.1L314.2 97.2Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M251.6 137.3L202.1 147.3L210.1 191.4Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M756.9 403.7L745.9 354.6L696.4 390.7Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M559.8 0L506.3 0L547.8 47.1Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M295.2 61.1L257.6 96.2L314.2 97.2Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M207.1 248.5L189.1 293.5L258.6 295.5Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M161.6 283.5L189.1 293.5L207.1 248.5Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M191.1 380.7L265.6 403.7L214.1 337.6Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M191.1 380.7L242.6 449.8L265.6 403.7Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M647.8 540L659.8 496.9L597.3 492.9Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M553.8 540L594.3 540L597.3 492.9Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M461.7 0L416.2 0L411.2 38.1Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M745.9 354.6L760.9 297.5L714.4 304.5Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M300.2 540L344.7 540L305.2 491.9Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M305.2 491.9L344.7 540L357.7 493.9Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M606.3 56.1L559.8 0L547.8 47.1Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M664.8 56.1L606.3 56.1L648.8 103.2Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M700.4 84.2L656.8 139.3L699.4 155.3Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M700.4 84.2L664.8 56.1L648.8 103.2Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M137.6 346.6L191.1 380.7L214.1 337.6Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M746.9 155.3L708.4 190.4L767.9 188.4Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M746.9 155.3L699.4 155.3L708.4 190.4Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M767.9 188.4L708.4 190.4L746.9 256.5Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M188.1 110.2L202.1 147.3L251.6 137.3Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M156.6 234.5L161.6 283.5L207.1 248.5Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M188.1 110.2L251.6 137.3L257.6 96.2Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M416.2 0L359.7 0L411.2 38.1Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M295.2 61.1L241.6 60.1L257.6 96.2Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M203.1 452.8L247.6 488.9L242.6 449.8Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M242.6 449.8L247.6 488.9L305.2 491.9Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M802.4 256.5L767.9 188.4L746.9 256.5Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M755.9 433.8L756.9 403.7L709.4 430.8Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M709.4 430.8L756.9 403.7L696.4 390.7Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M745.9 354.6L801.4 306.5L760.9 297.5Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M760.9 297.5L802.4 256.5L746.9 256.5Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M247.6 488.9L300.2 540L305.2 491.9Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M156.6 234.5L207.1 248.5L160.6 198.4Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M189.1 293.5L137.6 346.6L214.1 337.6Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M594.3 540L647.8 540L597.3 492.9Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M659.8 496.9L718.4 478.9L642.8 454.8Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M766.9 85.2L700.4 84.2L746.9 155.3Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M761.9 58.1L696.4 59.1L700.4 84.2Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M700.4 84.2L696.4 59.1L664.8 56.1Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M664.8 56.1L618.3 0L606.3 56.1Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M707.4 540L718.4 478.9L659.8 496.9Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M666.8 0L618.3 0L664.8 56.1Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M160.6 198.4L207.1 248.5L210.1 191.4Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M191.1 380.7L203.1 452.8L242.6 449.8Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M247.6 488.9L240.6 540L300.2 540Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M158.6 448.8L203.1 452.8L191.1 380.7Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M265.6 0L241.6 60.1L295.2 61.1Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M202.1 147.3L160.6 198.4L210.1 191.4Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M718.4 478.9L755.9 433.8L709.4 430.8Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M810.4 350.6L801.4 306.5L745.9 354.6Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M158.6 142.3L160.6 198.4L202.1 147.3Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M359.7 0L306.2 0L347.7 60.1Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M810.4 350.6L745.9 354.6L756.9 403.7Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M801.4 306.5L802.4 256.5L760.9 297.5Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M241.6 60.1L188.1 110.2L257.6 96.2Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M109.1 335.6L137.6 346.6L104.1 298.5Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M161.6 283.5L137.6 346.6L189.1 293.5Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M137.6 346.6L161.6 283.5L104.1 298.5Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M696.4 59.1L666.8 0L664.8 56.1Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M716.4 0L666.8 0L696.4 59.1Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M188.1 110.2L158.6 142.3L202.1 147.3Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M104.1 298.5L161.6 283.5L97.1 234.5Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M800.4 405.7L810.4 350.6L756.9 403.7Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M849.9 304.5L848.9 245.5L802.4 256.5Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M197.1 494.9L240.6 540L247.6 488.9Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M197.1 494.9L247.6 488.9L203.1 452.8Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M164.6 496.9L197.1 494.9L203.1 452.8Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M306.2 0L265.6 0L295.2 61.1Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M241.6 60.1L197.1 46.1L188.1 110.2Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M188.1 110.2L145.6 91.2L158.6 142.3Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M647.8 540L707.4 540L659.8 496.9Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M718.4 478.9L764.9 489.9L755.9 433.8Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M755.9 433.8L800.4 405.7L756.9 403.7Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M801.4 433.8L800.4 405.7L755.9 433.8Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M802.4 256.5L814.4 199.4L767.9 188.4Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M767.9 188.4L798.4 133.3L746.9 155.3Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M848.9 245.5L814.4 199.4L802.4 256.5Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M798.4 133.3L766.9 85.2L746.9 155.3Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M137.6 401.7L158.6 448.8L191.1 380.7Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M137.6 346.6L137.6 401.7L191.1 380.7Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M814.4 199.4L798.4 133.3L767.9 188.4Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M757.9 540L764.9 489.9L718.4 478.9Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M206.1 0L197.1 46.1L241.6 60.1Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M764.9 489.9L801.4 433.8L755.9 433.8Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M859.9 351.6L849.9 304.5L810.4 350.6Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M807.4 62.1L761.9 58.1L766.9 85.2Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M766.9 85.2L761.9 58.1L700.4 84.2Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M161.6 283.5L156.6 234.5L97.1 234.5Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M137.6 346.6L93.1 381.7L137.6 401.7Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M97.1 234.5L156.6 234.5L160.6 198.4Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M863.9 102.2L797.4 105.2L798.4 133.3Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M798.4 133.3L797.4 105.2L766.9 85.2Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M761.9 58.1L716.4 0L696.4 59.1Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M98.1 428.8L158.6 448.8L137.6 401.7Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M103.1 490.9L164.6 496.9L158.6 448.8Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M158.6 448.8L164.6 496.9L203.1 452.8Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M197.1 494.9L192.1 540L240.6 540Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M849.9 304.5L802.4 256.5L801.4 306.5Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M814.4 199.4L859.9 148.3L798.4 133.3Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M849.9 304.5L801.4 306.5L810.4 350.6Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M859.9 351.6L810.4 350.6L855.9 403.7Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M157.6 55.1L145.6 91.2L188.1 110.2Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M88.1 182.4L97.1 234.5L160.6 198.4Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M88.1 182.4L160.6 198.4L96.1 146.3Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M164.6 496.9L192.1 540L197.1 494.9Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M764.9 489.9L818.4 476.9L801.4 433.8Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M707.4 540L757.9 540L718.4 478.9Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M265.6 0L206.1 0L241.6 60.1Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M197.1 46.1L157.6 55.1L188.1 110.2Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M151.6 0L157.6 55.1L197.1 46.1Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M96.1 146.3L160.6 198.4L158.6 142.3Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M761.9 58.1L746.9 0L716.4 0Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M812.4 0L746.9 0L761.9 58.1Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M56.5 333.6L93.1 381.7L109.1 335.6Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M109.1 335.6L93.1 381.7L137.6 346.6Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M56.5 333.6L109.1 335.6L104.1 298.5Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M855.9 403.7L810.4 350.6L800.4 405.7Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M849.9 304.5L899.5 246.5L848.9 245.5Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M855.9 403.7L800.4 405.7L801.4 433.8Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M899.5 246.5L857.9 187.4L848.9 245.5Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M848.9 245.5L857.9 187.4L814.4 199.4Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M797.4 105.2L807.4 62.1L766.9 85.2Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M96.1 146.3L158.6 142.3L112.1 91.2Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M97.1 234.5L44.5 283.5L104.1 298.5Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M807.4 540L818.4 476.9L764.9 489.9Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M863.9 102.2L807.4 62.1L797.4 105.2Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M112.1 91.2L158.6 142.3L145.6 91.2Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M867.9 430.8L855.9 403.7L801.4 433.8Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M93.1 381.7L98.1 428.8L137.6 401.7Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M164.6 496.9L145.6 540L192.1 540Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M103.1 56.1L145.6 91.2L157.6 55.1Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M103.1 56.1L112.1 91.2L145.6 91.2Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M857.9 187.4L859.9 148.3L814.4 199.4Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M911.5 186.4L859.9 148.3L857.9 187.4Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M62.5 197.4L97.1 234.5L88.1 182.4Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M62.5 197.4L60.5 233.5L97.1 234.5Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M93.1 381.7L54.5 390.7L98.1 428.8Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M62.5 197.4L88.1 182.4L48.5 159.3Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M103.1 490.9L145.6 540L164.6 496.9Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M48.5 159.3L88.1 182.4L96.1 146.3Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M44.5 283.5L56.5 333.6L104.1 298.5Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M98.1 428.8L103.1 490.9L158.6 448.8Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M807.4 540L845.9 476.9L818.4 476.9Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M818.4 476.9L845.9 476.9L801.4 433.8Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M845.9 476.9L867.9 430.8L801.4 433.8Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M855.9 403.7L902.5 353.6L859.9 351.6Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M918.5 286.5L899.5 246.5L849.9 304.5Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M757.9 540L807.4 540L764.9 489.9Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M61.5 450.8L103.1 490.9L98.1 428.8Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M206.1 0L151.6 0L197.1 46.1Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M57.5 106.2L48.5 159.3L96.1 146.3Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M902.5 353.6L849.9 304.5L859.9 351.6Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M60.5 233.5L44.5 283.5L97.1 234.5Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M0 281.5L44.5 283.5L0 245.5Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M904.5 108.2L863.9 102.2L859.9 148.3Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M859.9 148.3L863.9 102.2L798.4 133.3Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M807.4 62.1L812.4 0L761.9 58.1Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M0 333.6L54.5 390.7L56.5 333.6Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M56.5 333.6L54.5 390.7L93.1 381.7Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M151.6 0L103.1 56.1L157.6 55.1Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M916.5 383.7L902.5 353.6L855.9 403.7Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M861.9 43.1L812.4 0L807.4 62.1Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M57.5 106.2L96.1 146.3L112.1 91.2Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M0 245.5L44.5 283.5L60.5 233.5Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M54.5 390.7L61.5 450.8L98.1 428.8Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M103.1 490.9L102.1 540L145.6 540Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M902.5 353.6L918.5 286.5L849.9 304.5Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M899.5 246.5L911.5 186.4L857.9 187.4Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M960 209.4L911.5 186.4L899.5 246.5Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M863.9 102.2L861.9 43.1L807.4 62.1Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M62.5 44.1L57.5 106.2L103.1 56.1Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M103.1 56.1L57.5 106.2L112.1 91.2Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M54.5 490.9L102.1 540L103.1 490.9Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M900.5 476.9L901.5 427.8L867.9 430.8Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M867.9 430.8L901.5 427.8L855.9 403.7Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M960 336.6L960 282.5L918.5 286.5Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M900.5 476.9L867.9 430.8L845.9 476.9Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M901.5 427.8L916.5 383.7L855.9 403.7Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M900.5 47.1L861.9 43.1L863.9 102.2Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M960 152.3L910.5 143.3L911.5 186.4Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M911.5 186.4L910.5 143.3L859.9 148.3Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M151.6 0L104.1 0L103.1 56.1Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M910.5 143.3L904.5 108.2L859.9 148.3Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M895.5 0L845.9 0L861.9 43.1Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M861.9 43.1L845.9 0L812.4 0Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M0 478.9L54.5 490.9L61.5 450.8Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M61.5 450.8L54.5 490.9L103.1 490.9Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M0 400.7L61.5 450.8L54.5 390.7Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M807.4 540L863.9 540L845.9 476.9Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M960 388.7L960 336.6L916.5 383.7Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M863.9 540L900.5 476.9L845.9 476.9Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M0 245.5L60.5 233.5L0 203.4Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M44.5 283.5L0 333.6L56.5 333.6Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M60.5 233.5L62.5 197.4L0 203.4Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M104.1 0L62.5 44.1L103.1 56.1Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M0 203.4L62.5 197.4L48.5 159.3Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M0 203.4L48.5 159.3L0 136.3Z" fill="#87d0cf" stroke="#FFFFFF"></path>
+        <path d="M0 281.5L0 333.6L44.5 283.5Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M0 136.3L48.5 159.3L57.5 106.2Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M960 336.6L918.5 286.5L902.5 353.6Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M918.5 286.5L960 233.5L899.5 246.5Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M960 89.2L900.5 47.1L904.5 108.2Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M960 336.6L902.5 353.6L916.5 383.7Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M960 89.2L904.5 108.2L910.5 143.3Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M904.5 108.2L900.5 47.1L863.9 102.2Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M0 333.6L0 400.7L54.5 390.7Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M960 282.5L960 233.5L918.5 286.5Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M960 388.7L916.5 383.7L901.5 427.8Z" fill="#7fccda" stroke="#FFFFFF"></path>
+        <path d="M960 233.5L960 209.4L899.5 246.5Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M0 106.2L0 136.3L57.5 106.2Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M863.9 540L897.5 540L900.5 476.9Z" fill="#82ced5" stroke="#FFFFFF"></path>
+        <path d="M960 446.8L960 388.7L901.5 427.8Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M960 446.8L901.5 427.8L900.5 476.9Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M0 400.7L0 446.8L61.5 450.8Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M54.5 490.9L43.5 540L102.1 540Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M0 478.9L43.5 540L54.5 490.9Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M104.1 0L56.5 0L62.5 44.1Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M0 54.1L0 106.2L57.5 106.2Z" fill="#a8d5ba" stroke="#FFFFFF"></path>
+        <path d="M960 209.4L960 152.3L911.5 186.4Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M0 54.1L57.5 106.2L62.5 44.1Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M960 0L895.5 0L900.5 47.1Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M900.5 47.1L895.5 0L861.9 43.1Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M0 446.8L0 478.9L61.5 450.8Z" fill="#8ed2ca" stroke="#FFFFFF"></path>
+        <path d="M960 477.9L960 446.8L900.5 476.9Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M960 152.3L960 89.2L910.5 143.3Z" fill="#84c2e6" stroke="#FFFFFF"></path>
+        <path d="M0 0L0 54.1L62.5 44.1Z" fill="#7ec9df" stroke="#FFFFFF"></path>
+        <path d="M960 540L960 477.9L900.5 476.9Z" fill="#9fd4bf" stroke="#FFFFFF"></path>
+        <path d="M960 89.2L960 55.1L900.5 47.1Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M0 478.9L0 540L43.5 540Z" fill="#96d3c4" stroke="#FFFFFF"></path>
+        <path d="M56.5 0L0 0L62.5 44.1Z" fill="#8bbee8" stroke="#FFFFFF"></path>
+        <path d="M897.5 540L960 540L900.5 476.9Z" fill="#80c6e3" stroke="#FFFFFF"></path>
+        <path d="M960 55.1L960 0L900.5 47.1Z" fill="#7fccda" stroke="#FFFFFF"></path>
+      </g>
+    </svg>
+    <h3 data-aos="fade-up" data-aos-delay="500" data-aos-offset="-100">Related Video</h3>
+    <iframe data-aos="zoom-out-up" data-aos-delay="500" data-aos-offset="-100" width="560" height="315"
+      src="https://www.youtube.com/embed/OPbTiHjdw8w" title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </section>
+
+  <section class="image" id="image">
+    <h3 data-aos="fade-right" data-aos-delay="500" data-aos-offset="-100">Image Gallery</h3>
+
+    <p data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">(Hover/Click Over the left image and see the
+      zoomed part on the right side.)</p>
+
+    <div class="img-zoom-container" data-aos="fade-up" data-aos-delay="500" data-aos-offset="-100">
+      <img id="myimage" src="https://www.dropbox.com/s/sgrhmxgetelfvoz/gandr-collage.jpg?raw=1" alt="Girl">
+
+      <div id="myresult" class="img-zoom-result"></div>
+    </div>
+
+  </section>
+
+  <section class="credits" id="sec10">
+    <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+      <!-- <rect x="0" y="0" width="960" height="540" fill="#c45b2e"></rect> -->
+      <g fill="#530021">
+        <circle r="125" cx="122" cy="322"></circle>
+        <circle r="86" cx="861" cy="420"></circle>
+        <circle r="86" cx="515" cy="387"></circle>
+        <circle r="108" cx="610" cy="126"></circle>
+      </g>
+    </svg>
+
+    <h3 data-aos="fade-up" data-aos-delay="500" data-aos-offset="-100">Credits</h3>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100"><img loading="eager" src="images/notepad.png"
+        alt=""> Content Writing</h4>
+    <p data-aos="fade-right" data-aos-delay="500" data-aos-offset="-100">Amey Sawale <br> Chaitanya Shelar <br> Hitesh
+      Bhusara</p>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100"><img loading="eager" src="images/videoedit.png"
+        alt=""> Video Editing</h4>
+    <p data-aos="fade-right" data-aos-delay="500" data-aos-offset="-100">Ayush Satpute</p>
+    <h4 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100"><img loading="eager" src="images/web.png"
+        alt=""> Web Designing</h4>
+    <p data-aos="fade-right" data-aos-delay="500" data-aos-offset="-100">Yash Kumar</p>
+  </section>
+
+  <section class="software" id="softw">
+    <canvas id="bgCanvas"></canvas>
+    <script src="js/softpage.js"></script>
+    <h3 data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100">Softwares and Websites used</h3>
+    <div>
+      <a data-aos="fade-up" data-aos-delay="500" data-aos-offset="-100" target="_blank" href="https://www.kinemaster.com/"><img src="images/kinemaster.png" alt=""></a> 
+
+      <a data-aos="fade-down" data-aos-delay="500" data-aos-offset="-100" target="_blank" href="https://play.google.com/store/apps/details?id=com.cyberlink.powerdirector.DRA140225_01&hl=en_IN&gl=US"><img src="images/powerdir.png" alt=""></a> 
+
+      <a data-aos="fade-up" data-aos-delay="500" data-aos-offset="-100" target="_blank" href="https://www.google.com/docs/about/"><img src="images/docs.png" alt=""></a> 
+
+      <a data-aos="fade-down" data-aos-delay="500" data-aos-offset="-100" target="_blank" href="https://www.adobe.com/in/products/photoshop.html"><img src="images/ps.png" alt=""></a> 
+
+      <a data-aos="fade-up" data-aos-delay="500" data-aos-offset="-100" target="_blank" href="https://code.visualstudio.com/"><img src="images/vs.png" alt=""></a> 
+
+      <a data-aos="fade-down" data-aos-delay="500" data-aos-offset="-100" target="_blank" href="https://github.com/" id="gita"><img src="images/github.png" id="git" alt=""></a> 
+      
+      <a data-aos="fade-up" data-aos-delay="500" data-aos-offset="-100" target="_blank" href="https://www.netlify.com/"><img src="images/netlify.png" alt=""></a> 
+    </div>
+  </section>
+
+  <footer id="sec11">
+    <svg viewBox="0 0 120 28">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="
+               1 0 0 0 0  
+               0 1 0 0 0  
+               0 0 1 0 0  
+               0 0 0 13 -9" result="goo" />
+          <xfeBlend in="SourceGraphic" in2="goo" />
+        </filter>
+        <path id="wave"
+          d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+      </defs>
+
+      <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+      <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+
+
+      <g class="gooeff" filter="url(#goo)">
+        <circle class="drop drop1" cx="20" cy="2" r="8.8" />
+        <circle class="drop drop2" cx="25" cy="2.5" r="7.5" />
+        <circle class="drop drop3" cx="16" cy="2.8" r="9.2" />
+        <circle class="drop drop4" cx="18" cy="2" r="8.8" />
+        <circle class="drop drop5" cx="22" cy="2.5" r="7.5" />
+        <circle class="drop drop6" cx="26" cy="2.8" r="9.2" />
+        <circle class="drop drop1" cx="5" cy="4.4" r="8.8" />
+        <circle class="drop drop2" cx="5" cy="4.1" r="7.5" />
+        <circle class="drop drop3" cx="8" cy="3.8" r="9.2" />
+        <circle class="drop drop4" cx="3" cy="4.4" r="8.8" />
+        <circle class="drop drop5" cx="7" cy="4.1" r="7.5" />
+        <circle class="drop drop6" cx="10" cy="4.3" r="9.2" />
+
+        <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8" />
+        <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5" />
+        <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2" />
+        <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8" />
+        <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5" />
+        <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2" />
+        <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+      </g>
+      <!-- g mask="url(#xxx)">
+        <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+        </g>
+      </g -->
+
+    </svg>
+    <div class="containcontain">
+      <div>
+        <span>
+          <a href="https://www.dropbox.com/s/r852aawr5i81x3n/eng%20project-converted%20%281%29.pdf?raw=1"
+            target="_blank" class="hover-underline-animation" data-aos="fade-right" data-aos-delay="500"
+            data-aos-offset="-100"> <img loading="eager" src="images/pdf.png" alt=""> Download This Project as Pdf</a>
+        </span>
+        <span>
+          <h4 data-aos="fade" data-aos-delay="500" data-aos-offset="-100">Or</h4>
+        </span>
+        <span>
+          <a href="https://github.com/yashkum095/englishProject" target="_blank" class="repo hover-underline-animation"
+            data-aos="fade-left" data-aos-delay="500" data-aos-offset="-100"> <img loading="eager"
+              src="images/github.png" alt=""> See Git Repo</a>
+        </span>
+      </div>
+      <p>Thank You</p>
+    </div>
+  </footer>
+  <!-- Title Page, Introduction of Group members, Theme of the Project, The village/s selected, Historical/cultural/social importance of the village (2 Pages), Interviews of the old and experienced village people (2 Pages), Conclusion -->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+    const tween = KUTE.fromTo(
+      '#blob1',
+      { path: '#blob1' },
+      { path: '#blob2' },
+      { repeat: 999, duration: 3000, yoyo: true }
+    )
+    tween.start()
+  </script>
+
+</body>
+
+<script>
+  let viewportHeight = window.innerHeight;
+  let viewportWidth = window.innerWidth;
+  const ratio = viewportHeight / viewportWidth;
+  const landscapeElement = document.getElementById("landscape");
+  const textAnimate = document.getElementsByClassName('text1')[0];
+  var body = document.getElementsByTagName("BODY")[0];
+  $(window).on("load", function () {
+    $(".loader-wrapper").fadeOut("slow");
+  });
+  window.addEventListener('load', (event) => {
+    textAnimate.style = "animation: text 3s 1;";
+    body.style = "overflow-y: scroll;";
+  });
+  if (ratio > 1) {
+    landscapeElement.style.display = "flex";
+    body.style = "overflow-y: hidden;";
+  }
+  function myFunction(x) {
+    // x.classList.toggle("change");
+  }
+</script>
+
+<script>
+  /* Open when someone clicks on the span element */
+  var body = document.getElementsByTagName("BODY")[0];
+  function openNav() {
+    document.getElementById("ham").style.display = "none";
+    document.getElementById("myNav").style.width = "100%";
+    body.style = "overflow:hidden;";
+  }
+
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeNav() {
+    document.getElementById("ham").style.display = "inline-block";
+    document.getElementById("myNav").style.width = "0%";
+    body.style = "overflow-y: scroll;";
+  }
+</script>
+
+<script src="js/script.js"></script>
+<script>
+  imageZoom("myimage", "myresult");
+</script>
+
+</html>
